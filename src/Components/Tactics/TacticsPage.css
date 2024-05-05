@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.tactics-container{
+  margin-top: 6rem;
+}
+
+#field {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  background-image: url('../../../public/media/pitch.jpg'); 
+  background-size: cover;
+  border: 2px solid #000;
+  margin: 20px auto;
+}
+
+.player {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 50%;
+  cursor: move;
+}
+
+.formations {
+  display: flex;
+  justify-content: center;
+  margin: auto; 
+  width: fit-content; 
+}
+
+.formations button {
+  margin: 0 10px;
+  padding: 5px;
+  width: 85px;
+  border-radius: 1rem;
+  background-color: #D6D6D6;
+}
+
+.formations button:hover {
+  background-color: white;
+  transition: 0.2s all linear;
+}
+
+.tool-button {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  position: absolute;
+  top: 50px;
+  right: 140px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.tool-button img {
+  width: 50px; 
+  height: 50px;
+  padding: 5px;
+  border-radius: 1rem;
+  background-color: #fff;
+}
+
+
+#field.drawing-mode {
+  cursor: crosshair; 
+}
+
+.drawing-line {
+  position: absolute;
+  width: 0; 
+  height: 0; 
+  border: 2px solid #000; 
+  pointer-events: none; 
+}
+
+.tool-icon {
+  background-color: #fff;
+}
+
+.tool-icon.active {
+  background-color: #f35405;
+}
+

@@ -1,0 +1,24 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'PT Sans', sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.home{
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.content-container {
+  padding-top: calc(var(--header-height) + 20px); 
+}
+
+
